@@ -1,0 +1,22 @@
+.mobile-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    text-align: center;
+    flex-grow: 1;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-item i {
+    font-size: 24px;
+}
