@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EHU GrAL INFORMAZIOA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/sarrera.css"> 
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="row w-100 text-center">
+        <!-- Botón 1 -->
+        <div class="col-2">
+          <button type="buttonhasiera" class="btn btn-hasiera-active w-100">HASIERA</button>
+        </div>
+        <!-- Botón 2 -->
+        <div class="col-2">
+          <button type="button" class="btn btn-success w-100">ABOUT US</button>
+        </div>
+        <!-- Logo -->
+        <div class="col-4">
+          <img src="/resources/logoehu.png" alt="Logo" class="img-fluid" style="max-height: 50px;"> 
+        </div>
+        <!-- Botón 3 -->
+        <div class="col-2">
+          <button type="button" class="btn btn-success w-100">KONTAKTUA</button>
+        </div>
+        <!-- Botón 4 -->
+        <div class="col-2">
+          <button type="button" class="btn btn-success w-100">LAGUNTZA</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Encabezado -->
+  <div class="header text-center col-12">
+    <h1>INFORMATIKA FAKULTATEKO</h1>
+        <p>GrALen INFORMAZIOA</p>
+  </div>
+  
+   <!-- Sección con el ícono de scroll -->
+   <div class="scroll-section bg-light">
+    <div id="scrollIcon" class="scroll-icon text-center">
+      <span>&#x25BC;</span> <!-- Flecha hacia abajo -->
+    </div>
+  </div>
+  <!-- Sección con botones -->
+  <div id="buttonsSection" class="bottom-section bg-secondary">
+    <button class="btn btn-primary">Araudi Orokorra</button>
+    <button class="btn btn-secondary">Adimen Artifizialeko Gradua</button>
+    <button class="btn btn-success">Informatika Ingeniaritzako Gradua</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Seleccionar el ícono y la sección de destino
+    const scrollIcon = document.getElementById("scrollIcon");
+    const buttonsSection = document.getElementById("buttonsSection");
+
+    // Agregar evento al ícono
+    scrollIcon.addEventListener("click", () => {
+      buttonsSection.scrollIntoView({ behavior: "smooth" }); // Hacer scroll suave
+    });
+  </script>
+
+</body>
+</html>
+
