@@ -24,23 +24,30 @@ body {
       
     }
     
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 60px); /* Resta el alto del menú */
-    text-align: center;
-  }
 
-  .header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Resta el alto del menú */
+  text-align: center;
+  flex-direction: column; /* Establece los elementos en columna */
+}
 
-  .header p {
-    font-size: 1.2rem;
-    font-weight: lighter;
-  }
+.header h1 {
+  font-size: 4rem; /* Aumenta el tamaño de la fuente del título */
+  font-weight: bold;
+  margin-bottom: 20px; /* Agrega espacio debajo del título */
+}
+
+.header p {
+  font-size: 2rem; /* Aumenta el tamaño de la fuente del párrafo */
+  font-weight: bold;
+  margin-top: 20px; /* Agrega espacio encima del párrafo */
+  
+}
+
+    
   @keyframes bounce {
     0%, 100% {
       transform: translateX(-50%) translateY(0);

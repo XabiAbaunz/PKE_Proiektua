@@ -1,0 +1,100 @@
+.mobile-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  text-align: center;
+  flex-grow: 1;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-item i {
+  font-size: 1.5rem; /* Cambié a rem para hacerlo más flexible */
+}
+
+.navbar {
+  padding: 20px 0; /* Ajuste del padding para mayor flexibilidad */
+}
+
+/* Botón de éxito */
+.btn-success {
+  background: linear-gradient(135deg, #447dae, #153d65);
+  color: white;
+  border: 2px solid #045087;
+  font-size: 1rem; /* Cambié a rem para mayor flexibilidad */
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 100%; /* Se asegura que el botón ocupe el ancho completo */
+}
+
+/* Hover del botón de éxito */
+.btn-success:hover {
+  background-color: #045087;
+  border-color: #045087;
+  transform: translateY(-3px);
+  color: black;
+}
+
+/* Active del botón de éxito */
+.btn-success:active {
+  background-color: #045087;
+  border-color: #045087;
+  transform: translateY(2px);
+}
+
+/* Botón de Galdetegia */
+.btn-galdetegia {
+  background: linear-gradient(135deg, #049933, #0e5216);
+  color: white;
+  border: 2px solid #045087;
+  font-size: 1rem; /* Cambié a rem para mayor flexibilidad */
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 100%; /* Asegura que el botón ocupe el ancho completo */
+}
+
+/* Hover del botón de Galdetegia */
+.btn-galdetegia:hover {
+  background-color: #045087;
+  border-color: #045087;
+  transform: translateY(-3px);
+  color: black;
+}
+
+/* Active del botón de Galdetegia */
+.btn-galdetegia:active {
+  background-color: #045087;
+  border-color: #045087;
+  transform: translateY(2px);
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .btn-success, .btn-galdetegia {
+      font-size: 0.9rem; /* Reducir tamaño del texto en pantallas pequeñas */
+      padding: 10px 20px; /* Reducir padding en pantallas pequeñas */
+  }
+
+  .mobile-menu {
+      padding: 5px 0; /* Reducir padding en pantallas pequeñas */
+  }
+
+  .menu-item i {
+      font-size: 1.25rem; /* Reducir tamaño de iconos en pantallas pequeñas */
+  }
+
+  .navbar {
+      padding: 10px 0; /* Reducir el padding de la barra de navegación */
+  }
+}
