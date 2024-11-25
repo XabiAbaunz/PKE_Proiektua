@@ -144,9 +144,9 @@ body {
   transform: translateY(2px); /* Presión del botón con un pequeño movimiento */
 }
 
-.btn-hasiera-active {
-  background-color: #c2d0c6f6; /* Color de fondo verde */
-  color: rgb(236, 13, 13); /* Color del texto blanco */
+.btn-hasiera {
+  background-color: #444644f6; /* Color de fondo verde */
+  color: rgb(255, 255, 255); /* Color del texto blanco */
   border: 2px solid #f3f8f4; /* Borde verde oscuro */
   font-size: 1.5rem; /* Tamaño del texto */
   padding: 15px 30px; /* Relleno interno del botón */
