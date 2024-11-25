@@ -1,0 +1,156 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/resources/foto.webp');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+ }
+    /* O si prefieres agregar una capa de opacidad para hacerla más clara */
+  body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(249, 249, 249, 0.9); /* Capa blanca con opacidad */
+      z-index: -1; /* Asegura que la capa no cubra el contenido */
+    }
+    .navbar {
+      padding: 30px 0; /* Aumenta el padding superior e inferior */
+      
+    }
+    
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Resta el alto del menú */
+  text-align: center;
+  flex-direction: column; /* Establece los elementos en columna */
+}
+
+.header h1 {
+  font-size: 4rem; /* Aumenta el tamaño de la fuente del título */
+  font-weight: bold;
+  margin-bottom: 20px; /* Agrega espacio debajo del título */
+}
+
+.header p {
+  font-size: 2rem; /* Aumenta el tamaño de la fuente del párrafo */
+  font-weight: bold;
+  margin-top: 20px; /* Agrega espacio encima del párrafo */
+  
+}
+
+    
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+  /* Estilo de la sección de scroll */
+ 
+  .scroll-icon {
+    font-size: 3rem;
+    color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 0.5s infinite;
+  }
+
+  .bottom-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #buttonsSection button {
+    font-family: 'Arial', sans-serif; /* Fuente elegante y sencilla */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita para destacar */
+    color: white; /* Texto blanco */
+    padding: 15px 40px; /* Espaciado interno */
+    margin: 20px; /* Separación entre botones */
+    border: 2px solid transparent; /* Borde inicial invisible */
+    width: 350px; /* Ancho fijo para los botones */
+    height: 100px; /* Altura fija para los botones */
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    transition: all 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    cursor: pointer; /* Cursor de mano */
+  }
+
+/* Colores personalizados para cada botón */
+#buttonsSection .btn-primary,
+#buttonsSection .btn-secondary,
+#buttonsSection .btn-success {
+  background: linear-gradient(135deg, #447dae, #153d65); 
+}
+
+
+/* Efectos hover (al pasar el ratón) */
+#buttonsSection button:hover {
+  color: #fff; /* Asegura que el texto sea blanco */
+  transform: translateY(-5px); /* Eleva el botón */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  border: 2px solid white; /* Añade un borde blanco */
+}
+
+/* Efecto active (al hacer clic) */
+#buttonsSection button:active {
+  transform: translateY(2px); /* Botón vuelve ligeramente al presionarlo */
+  box-shadow: 0 5px 10px rgba(22, 21, 21, 0.978); /* Sombra más suave */
+}
+
+.bg-custom {
+  background-color: rgba(255, 255, 255, 0.9); /* Capa semitransparente sobre la imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.btn-success {
+ background: linear-gradient(135deg, #447dae, #153d65); 
+  color: white; /* Color del texto blanco */
+  border: 2px solid #045087; /* Borde verde oscuro */
+  font-size: 1.5rem; /* Tamaño del texto */
+  padding: 15px 30px; /* Relleno interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.btn-success:hover {
+  background-color:  #045087; /* Fondo más oscuro al pasar el cursor */
+  border-color:  #045087; /* Color del borde al pasar el cursor */
+  transform: translateY(-3px); /* Leve elevación al hacer hover */
+}
+
+.btn-success:active {
+  background-color: #045087; /* Fondo aún más oscuro al presionar */
+  border-color:  #045087; /* Borde más oscuro al presionar */
+  transform: translateY(2px); /* Presión del botón con un pequeño movimiento */
+}
+
+.btn-hasiera {
+  background-color: #444644f6; /* Color de fondo verde */
+  color: rgb(255, 255, 255); /* Color del texto blanco */
+  border: 2px solid #f3f8f4; /* Borde verde oscuro */
+  font-size: 1.5rem; /* Tamaño del texto */
+  padding: 15px 30px; /* Relleno interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave al hacer hover */
+}
+
