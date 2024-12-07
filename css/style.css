@@ -1,3 +1,5 @@
+
+
 .mobile-menu {
     position: fixed;
     bottom: 0;
@@ -8,15 +10,67 @@
     justify-content: space-around;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item {
+  }
+  
+  .menu-item {
     text-align: center;
     flex-grow: 1;
     color: #000;
     text-decoration: none;
+  }
+  
+  .menu-item i {
+    font-size: 1.5rem; /* Cambié a rem para hacerlo más flexible */
+  }
+  
+  .navbar {
+    background-color: #f8f9fa00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px 0; /* Aumenta el padding superior e inferior */
 }
+  
+  /* Botón de éxito */
+  .btn-success {
+    background: linear-gradient(135deg, #447dae, #153d65);
+    color: white;
+    border: 2px solid #045087;
+    font-size: 1rem; /* Cambié a rem para mayor flexibilidad */
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 100%; /* Se asegura que el botón ocupe el ancho completo */
+  }
+  
+  /* Hover del botón de éxito */
+  .btn-success:hover {
+    background-color: #045087;
+    border-color: #045087;
+    transform: translateY(-3px);
+    color: black;
+  }
+  
+  /* Active del botón de éxito */
+  .btn-success:active {
+    background-color: #045087;
+    border-color: #045087;
+    transform: translateY(2px);
+  }
+  /* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .btn-success, .btn-galdetegia {
+      font-size: 0.9rem; /* Reducir tamaño del texto en pantallas pequeñas */
+      padding: 10px 20px; /* Reducir padding en pantallas pequeñas */
+  }
 
-.menu-item i {
-    font-size: 24px;
+  .mobile-menu {
+      padding: 5px 0; /* Reducir padding en pantallas pequeñas */
+  }
+
+  .menu-item i {
+      font-size: 1.25rem; /* Reducir tamaño de iconos en pantallas pequeñas */
+  }
+
+  .navbar {
+      padding: 10px 0; /* Reducir el padding de la barra de navegación */
+  }
 }
