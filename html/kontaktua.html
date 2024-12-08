@@ -8,27 +8,31 @@
   <link rel="stylesheet" href="/css/kontaktua.css">
 </head>
 <body>
-      <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg bg-light">
+ <!-- Barra de navegación -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
       <div class="row w-100 text-center">
-          <!-- Botón 1 -->
+          <!-- Botón 1 (Inicio) -->
           <div class="col-6 col-sm-3 col-md-2 order-2 order-sm-1">
               <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='sarrera.html'">HASIERA</button>
           </div>
-          <!-- Botón 2 -->
+
+          <!-- Botón 2 (About Us) -->
           <div class="col-6 col-sm-3 col-md-2 order-3 order-sm-2">
-              <button type="button" class="btn btn-primary  w-100 fs-6" onclick="location.href='about_us.html'">ABOUT US</button>
+              <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='about_us.html'">ABOUT US</button>
           </div>
+
           <!-- Logo -->
-          <div class="col-12 col-sm-6 col-md-4 order-1 order-sm-3">
-              <img src="../resources/logoehu.png" alt="Logo" class="img-fluid" style="max-height: 70px;"> 
+          <div class="col-12 col-sm-6 col-md-4 order-1 order-sm-3 d-flex justify-content-center">
+              <img src="../resources/logoehu.png" alt="Logo" class="img-fluid" style="max-height: 90px; width: auto;">
           </div>
-          <!-- Botón 3 -->
+
+          <!-- Botón 3 (Contacto) -->
           <div class="col-6 col-sm-3 col-md-2 order-4 order-sm-4">
               <button type="button" class="btn btn-secondary w-100 fs-6" onclick="location.href='kontaktua.html'">KONTAKTUA</button>
           </div>
-          <!-- Botón 4 -->
+
+          <!-- Botón 4 (Ayuda) -->
           <div class="col-6 col-sm-3 col-md-2 order-5 order-sm-5">
               <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='laguntza.html'">LAGUNTZA</button>
           </div>
@@ -36,21 +40,33 @@
   </div>
 </nav>
 
-<div class="container-fluid">
-  <div class="row align-items-center gx-0">
-    <div class="col">
-      <img src="/resources/mapa.png" alt="Custom Image" class="img-fluid" style="max-height: 600px;">
+<div class="container-fluid py-5">
+  <div class="row align-items-center gx-5">
+    <!-- Imagen -->
+    <div class="col-md-6 text-center">
+      <img src="/resources/mapa.png" alt="Custom Image" class="img-fluid rounded shadow" style="max-height: 600px;">
     </div>
-    <div class="col">
-      <h2 class="text-center">Fakultateko helbidea: Manuel Lardizabal Pasealekua, 1, 20018 Donostia, Gipuzkoa</h2>
-      <br>
-      <h2 class="text-center">Fakultateko telefonoa: 943018016</h2>
-      <br>
-      <h2 class="text-center">Fakultateko emaila: dif.idazkaria@ehu.eus​​​​​​​</h2>
+    <!-- Información -->
+    <div class="col-md-6">
+      <div class="card border-0 shadow">
+        <div class="card-body">
+          <h4 class="card-title mb-4 text-primary">Fakultateko Informazioa</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <b>Fakultateko helbidea:</b> Manuel Lardizabal Pasealekua, 1, 20018 Donostia, Gipuzkoa
+            </li>
+            <li class="list-group-item">
+              <b>Fakultateko telefonoa:</b> 943018016
+            </li>
+            <li class="list-group-item">
+              <b>Fakultateko emaila:</b> <a href="mailto:dif.idazkaria@ehu.eus" class="text-decoration-none">dif.idazkaria@ehu.eus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
