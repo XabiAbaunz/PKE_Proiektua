@@ -11,52 +11,68 @@
 
 <body>
 
-        <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <div class="row w-100 text-center">
-            <!-- Botón 1 -->
-            <div class="col-6 col-sm-3 col-md-2 order-2 order-sm-1">
-                <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='sarrera.html'">HASIERA</button>
-            </div>
-            <!-- Botón 2 -->
-            <div class="col-6 col-sm-3 col-md-2 order-3 order-sm-2">
-                <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='about_us.html'">ABOUT US</button>
-            </div>
-            <!-- Logo -->
-            <div class="col-12 col-sm-6 col-md-4 order-1 order-sm-3">
-                <img src="../resources/logoehu.png" alt="Logo" class="img-fluid" style="max-height: 70px;"> 
-            </div>
-            <!-- Botón 3 -->
-            <div class="col-6 col-sm-3 col-md-2 order-4 order-sm-4">
-                <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='kontaktua.html'">KONTAKTUA</button>
-            </div>
-            <!-- Botón 4 -->
-            <div class="col-6 col-sm-3 col-md-2 order-5 order-sm-5">
-                <button type="button" class="btn btn-secondary w-100 fs-6" onclick="location.href='laguntza.html'">LAGUNTZA</button>
-            </div>
-        </div>
-    </div>
+ <!-- Barra de navegación -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <div class="row w-100 text-center">
+          <!-- Botón 1 (Inicio) -->
+          <div class="col-6 col-sm-3 col-md-2 order-2 order-sm-1">
+              <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='sarrera.html'">HASIERA</button>
+          </div>
+
+          <!-- Botón 2 (About Us) -->
+          <div class="col-6 col-sm-3 col-md-2 order-3 order-sm-2">
+              <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='about_us.html'">ABOUT US</button>
+          </div>
+
+          <!-- Logo -->
+          <div class="col-12 col-sm-6 col-md-4 order-1 order-sm-3 d-flex justify-content-center">
+              <img src="../resources/logoehu.png" alt="Logo" class="img-fluid" style="max-height: 90px; width: auto;">
+          </div>
+
+          <!-- Botón 3 (Contacto) -->
+          <div class="col-6 col-sm-3 col-md-2 order-4 order-sm-4">
+              <button type="button" class="btn btn-primary w-100 fs-6" onclick="location.href='kontaktua.html'">KONTAKTUA</button>
+          </div>
+
+          <!-- Botón 4 (Ayuda) -->
+          <div class="col-6 col-sm-3 col-md-2 order-5 order-sm-5">
+              <button type="button" class="btn btn-secondary w-100 fs-6" onclick="location.href='laguntza.html'">LAGUNTZA</button>
+          </div>
+      </div>
+  </div>
 </nav>
 
-    <!-- Contenido principal -->
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Texto principal -->
-            <div id="testua" class="col-12 col-md-12 text-center">
-                <br>
-                <br>
-                <div class="p-4 border rounded shadow-sm bg-light">
-                    <h1>Laguntza:</h1>
-                    <br>
-                    <h2>
-                        Hasierako orrira itzultzeko, sakatu "HASIERA" botoia. Egileei buruzko informazioa nahi baduzu, sakatu "ABOUT US" botoia. Fakultatearekin harremanetan jartzeko kanalak ikusteko, sakatu "KONTAKTUA" botoia. Laguntza behar baduzu, sakatu "LAGUNTZA" botoia.
-                    </h2>
+<!-- Contenido principal -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+      <!-- Texto principal -->
+      <div id="testua" class="col-12 col-md-10">
+        <div class="p-4 border rounded shadow-sm bg-light text-center">
+          <h1 class="text-primary mb-4">Laguntza:</h1>
+          <ul class="list-group list-group-flush text-start">
+            <li class="list-group-item">
+              <b>Hasierako orrira itzultzeko:</b> sakatu <span class="text-primary">"HASIERA"</span> botoia.
+            </li>
+            <li class="list-group-item">
+              <b>Egileei buruzko informazioa:</b> sakatu <span class="text-primary">"ABOUT US"</span> botoia.
+            </li>
+            <li class="list-group-item">
+              <b>Fakultatearekin harremanetan jartzeko kanalak:</b> sakatu <span class="text-primary">"KONTAKTUA"</span> botoia.
+            </li>
+            <li class="list-group-item">
+              <div class="scroll-section">
+                <div id="scrollIcon" class="scroll-icon">
+                    <b>Hasiera orrian,</b>  <span class="triangle">&#x25BC;</span> sakatu,  <b>araudi desberdinak ezagutzeko.</b>
                 </div>
-            </div>
-
-            <!-- Sección de autores -->
-            
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+           
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoKvx0T8I2bGekdpC9gYUnUX+oPBmjY7zEy8pEHpwG8WJdE" crossorigin="anonymous"></script>
 </body>
