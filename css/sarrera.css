@@ -12,7 +12,7 @@ body {
 /* Capa de opacidad */
 body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -69,6 +69,33 @@ body::after {
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 0.5s infinite;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto; /* Cambia la altura fija */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
+
+  .header h1 {
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
+
+  .header p {
+    margin-top: 10px; /* Reduce el margen superior */
+  }
+
+  .scroll-section {
+    margin-top: -10px; /* Acerca la sección de scroll */
+    margin-bottom: 10px; /* Reduce el espacio inferior */
+  }
+
+  .scroll-icon {
+    position: relative;
+    bottom: auto;
+    margin-top: 10px; /* Reduce el margen superior */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
 }
 
 /* Sección inferior */
