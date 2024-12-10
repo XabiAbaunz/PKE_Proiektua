@@ -147,13 +147,7 @@ body::after {
   box-shadow: 0 5px 10px rgba(22, 21, 21, 0.978);
 }
 
-/* Ajuste de fondo semitransparente */
-.bg-custom {
-  background-color: rgba(255, 255, 255, 0.9);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+
 
 /* Ajuste de altura de botones global */
 .btn {
